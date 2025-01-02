@@ -1,10 +1,10 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { IonApp, IonRouterOutlet } from "@ionic/react";
+import { IonApp, IonRouterOutlet, IonSpinner } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Route } from "react-router-dom";
-import Home from "./views/Home";
+import Home from "./pages/Home";
 
 const queryClient = new QueryClient();
 
@@ -14,9 +14,11 @@ createRoot(document.getElementById("root")!).render(
 		<QueryClientProvider client={queryClient}>
 			<IonApp>
 				<IonReactRouter>
-					<IonRouterOutlet>
-						<Route path="/" component={Home} />
-					</IonRouterOutlet>
+					<Suspense fallback={<IonSpinner name="crescent" />}>
+						<IonRouterOutlet>
+							<Route path="/" component={Home} />
+						</IonRouterOutlet>
+					</Suspense>
 				</IonReactRouter>
 			</IonApp>
 		</QueryClientProvider>
