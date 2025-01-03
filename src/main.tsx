@@ -7,7 +7,6 @@ import { routes } from "./router/routes";
 import { Route } from "react-router-dom";
 
 const queryClient = new QueryClient();
-console.log(routes)
 
 // biome-ignore lint/style/noNonNullAssertion: <explanation>
 createRoot(document.getElementById("root")!).render(
