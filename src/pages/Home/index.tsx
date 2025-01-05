@@ -1,5 +1,20 @@
-const Home = () => {
-  return <div>Home</div>
-}
+import { IonContent, IonHeader } from "@ionic/react";
+import Header from "./Header";
+import All from "./All";
+import UpComing from "./UpComing";
 
-export default Home
+const Home = () => {
+	return (
+		<>
+			<IonHeader>
+				<Header />
+			</IonHeader>
+			<IonContent className="ion-padding">
+				<UpComing />
+				<All />
+			</IonContent>
+		</>
+	);
+};
+
+export default Home;
