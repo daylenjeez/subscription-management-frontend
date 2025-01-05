@@ -1,4 +1,8 @@
 .upcoming-card {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  width: 168px;
+  height: 140px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }

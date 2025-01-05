@@ -3,6 +3,7 @@ import { IonReactRouter } from "@ionic/react-router";
 import { Suspense } from "react";
 import { routes } from "./router/routes";
 import { Route } from "react-router-dom";
+import "./styles/index.scss";
 
 const App = () => (
 	<IonApp>

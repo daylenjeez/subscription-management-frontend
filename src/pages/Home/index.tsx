@@ -1,11 +1,11 @@
-import { IonContent, IonHeader } from "@ionic/react";
+import { IonContent, IonHeader, IonPage } from "@ionic/react";
 import Header from "./Header";
 import All from "./All";
 import UpComing from "./UpComing";
 
 const Home = () => {
 	return (
-		<>
+		<IonPage>
 			<IonHeader>
 				<Header />
 			</IonHeader>
@@ -13,7 +13,7 @@ const Home = () => {
 				<UpComing />
 				<All />
 			</IonContent>
-		</>
+		</IonPage>
 	);
 };
 

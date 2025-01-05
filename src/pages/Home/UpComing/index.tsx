@@ -1,15 +1,13 @@
-import { IonLabel, IonList, IonListHeader } from "@ionic/react";
+import { IonLabel } from "@ionic/react";
 import "./index.scss";
-import Card from "./Card";
 
 const UpComing = () => {
 	return (
-		<IonList>
-			<IonListHeader>
+		<div className="upcoming-container">
+			<div className="upcoming-container__header">
 				<IonLabel>即将订阅</IonLabel>
-			</IonListHeader>
-			<Card />
-		</IonList>
+			</div>
+		</div>
 	);
 };
 

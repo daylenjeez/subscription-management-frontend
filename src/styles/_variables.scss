@@ -1,1 +1,18 @@
+:root {
+  // 全局背景
+  --ion-background-color: #fafafa;
 
+  // 内容区背景
+  --ion-content-background: #fafafa;
+}
+
+// // 暗色模式
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --ion-background-color: #121212;
+//     --ion-background-color-rgb: 18, 18, 18;
+//     --ion-content-background: #1e1e1e;
+//     --ion-card-background: #2a2a2a;
+//     --ion-item-background: #2a2a2a;
+//   }
+// }
