@@ -1,3 +1,10 @@
+.all-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
 .all-container__header {
   h2 {
     margin-bottom: 16px;
@@ -6,7 +13,9 @@
 }
 
 .all-container__content {
-  display: flex;
-  flex-direction: column;
   gap: 16px;
+
+  .all-card {
+    margin-bottom: 16px;
+  }
 }

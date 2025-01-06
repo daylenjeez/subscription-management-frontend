@@ -1,8 +1,9 @@
 import { memo } from "react";
-import { IonContent, IonHeader, IonPage } from "@ionic/react";
+import { IonHeader, IonPage } from "@ionic/react";
 import Header from "./Header";
 import All from "./All";
 import UpComing from "./UpComing";
+import "./index.scss";
 
 const Home = memo(() => {
 	return (
@@ -10,10 +11,10 @@ const Home = memo(() => {
 			<IonHeader>
 				<Header />
 			</IonHeader>
-			<IonContent className="ion-padding">
+			<div className="home-container ion-padding">
 				<UpComing />
 				<All />
-			</IonContent>
+			</div>
 		</IonPage>
 	);
 });
