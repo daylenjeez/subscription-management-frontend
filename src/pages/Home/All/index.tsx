@@ -1,12 +1,10 @@
-import { IonLabel, IonList, IonListHeader } from "@ionic/react";
-
 const All = () => {
 	return (
-		<IonList>
-			<IonListHeader>
-				<IonLabel>全部订阅</IonLabel>
-			</IonListHeader>
-		</IonList>
+		<div className="all-container">
+			<div className="all-container__header">
+				<h2>全部订阅</h2>
+			</div>
+		</div>
 	);
 };
 
