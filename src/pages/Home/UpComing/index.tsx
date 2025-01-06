@@ -1,7 +1,10 @@
 import { IonLabel } from "@ionic/react";
 import "./index.scss";
+import { memo } from "react";
 
-const UpComing = () => {
+
+const UpComing = memo(() => {
+
 	return (
 		<div className="upcoming-container">
 			<div className="upcoming-container__header">
@@ -9,6 +12,6 @@ const UpComing = () => {
 			</div>
 		</div>
 	);
-};
+});
 
 export default UpComing;

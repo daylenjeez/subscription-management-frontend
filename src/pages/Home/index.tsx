@@ -2,8 +2,9 @@ import { IonContent, IonHeader, IonPage } from "@ionic/react";
 import Header from "./Header";
 import All from "./All";
 import UpComing from "./UpComing";
+import { memo } from "react";
 
-const Home = () => {
+const Home = memo(() => {
 	return (
 		<IonPage>
 			<IonHeader>
@@ -15,6 +16,6 @@ const Home = () => {
 			</IonContent>
 		</IonPage>
 	);
-};
+});
 
 export default Home;
