@@ -4,5 +4,53 @@
   width: 168px;
   height: 140px;
   padding: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  flex-shrink: 0;
+
+  .upcoming-card__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 12px;
+  }
+
+  .upcoming-card__logo-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
+  }
+
+  .upcoming-card__price-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .upcoming-card__price {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .upcoming-card__content {
+    gap: 10px;
+  }
+
+  .upcoming-card__name {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .upcoming-card__due-date {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }

@@ -1,1 +1,10 @@
-@import "./_variables.scss";
+@use "./_variables.scss";
+
+
+.hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+}

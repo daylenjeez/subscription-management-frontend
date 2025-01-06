@@ -10,7 +10,7 @@ const Home = memo(() => {
 			<IonHeader>
 				<Header />
 			</IonHeader>
-			<IonContent>
+			<IonContent className="ion-padding">
 				<UpComing />
 				<All />
 			</IonContent>

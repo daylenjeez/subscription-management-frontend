@@ -3,10 +3,10 @@ import "./index.scss";
 interface CardProps {
 	logo?: string;
 	name: string;
-	price: string;
+	price: number;
 	currency: string;
 	period: string;
-	dueDate: string;
+	dueDate?: Date;
 }
 
 const Card = (props: CardProps) => {
@@ -20,14 +20,19 @@ const Card = (props: CardProps) => {
 				</div>
 
 				<div className="upcoming-card__price-tag">
-					<div className="upcoming-card__price">{currency}{price}</div>
+					<div className="upcoming-card__price">
+						{currency}
+						{price}
+					</div>
 					<div className="upcoming-card__frequency">{period}</div>
 				</div>
 			</div>
 
 			<div className="upcoming-card__content">
 				<div className="upcoming-card__name">{name}</div>
-				<div className="upcoming-card__due-date">{dueDate}</div>
+				<div className="upcoming-card__due-date">
+					{dueDate?.toLocaleDateString()}
+				</div>
 			</div>
 		</div>
 	);
