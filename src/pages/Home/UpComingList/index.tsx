@@ -4,11 +4,11 @@ import "./index.scss";
 
 const UpComing = memo(() => {
 	return (
-		<div className="upcoming-container">
-			<div className="upcoming-container__header">
+		<div className="upcoming-subscription-container">
+			<div className="upcoming-subscription-container__header">
 				<h2>即将订阅</h2>
 			</div>
-			<div className="upcoming-container__content hide-scrollbar">
+			<div className="upcoming-subscription-container__content hide-scrollbar">
 				<Card
 					name="Netflix"
 					price={10}

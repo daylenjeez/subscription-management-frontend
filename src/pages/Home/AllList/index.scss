@@ -1,19 +1,21 @@
-.all-container {
+.all-subscription-container {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 
-.all-container__header {
+.all-subscription-container__header {
   h2 {
     margin-bottom: 16px;
     font-size: 17px;
   }
 }
 
-.all-container__content {
+.all-subscription-container__content {
   gap: 16px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
   .all-card {
     margin-bottom: 16px;

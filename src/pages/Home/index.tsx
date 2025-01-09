@@ -1,8 +1,8 @@
 import { memo } from "react";
 import { IonHeader, IonPage } from "@ionic/react";
 import Header from "./Header";
-import All from "./All";
-import UpComing from "./UpComing";
+import All from "./AllList";
+import UpComing from "./UpComingList";
 import "./index.scss";
 
 const Home = memo(() => {

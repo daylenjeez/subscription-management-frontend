@@ -1,0 +1,17 @@
+.upcoming-subscription-container {
+  margin-bottom: 32px;
+}
+
+.upcoming-subscription-container__content {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.upcoming-subscription-container__header {
+  h2 {
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+}
