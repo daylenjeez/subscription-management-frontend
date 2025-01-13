@@ -4,6 +4,7 @@ import Header from "./Header";
 import All from "./AllList";
 import UpComing from "./UpComingList";
 import "./index.scss";
+import Modal from "../../components/Modal";
 
 const Home = memo(() => {
 	return (
@@ -14,6 +15,8 @@ const Home = memo(() => {
 			<div className="home-container ion-padding">
 				<UpComing />
 				<All />
+
+				<Modal isOpen={true}></Modal>
 			</div>
 		</IonPage>
 	);
